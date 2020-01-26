@@ -1,0 +1,99 @@
+Difficulty: (1 being easiest, 10 being hardest):
+
+Easy 1:
+1: 1
+2: 1
+3: 3
+  - Looked up toFixed
+4: 2
+  - Don't forget to use parseFloat on incoming string
+5: 2
+6: 2
+7: 2
+8: 2
+9: 2
+10: 2
+
+Easy 2:
+1: 3
+2: 2
+3: 2
+4: 4
+5: 2
+6: 2
+7: 4
+8: 2
+9: 6
+10: 4
+
+Easy 3:
+1: 4
+2: 3
+3: 3
+4: 3
+5: 4
+6: 3
+7: 3
+8: 4
+9: 3
+10: 4
+
+Easy 4:
+
+Easy 5:
+
+List Processing: total of 3/4 
+
+String and Text Processing: total 3/4
+
+Interpretive Problem Solving:
+2: 4
+3: 7; misunderstood problem and missed multiple edge cases; need to redo
+
+Things Looked Up:
+Outputting number with set decimal points (even when integer)
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+
+Getting random numbers:
+use math.random()
+To get a random number in a range of x and y inclusive do the following:
+var num = min + Math.floor((Math.random() * (max - min + 1))); 
+Math.random() returns a floating point number between 0 inclusive and 1 exclusive; max - min finds the difference so you can expand range of numbers appropriatly; the + 1 ensures that max is found inclusively (rather than default of exclusively); Math.floor converts the number found to an integer; finally the addition of min to the result ensures that the range starts from min inclusively rather than 0
+need to use Math.floor here because it ensures you always round down
+if Math.round is used and your resulting number is 200.8, then it will round up to 201 which is invalid
+
+Find last digit:
+num % 10
+
+To find suffix:
+To account for numbers ending in 11, 12, and 13, can convert num to string and check last 2 digits using str.slice(str.length - 2) !=== 11
+
+Array.prototype.some:
+Can run on an array object
+Takes a callback function and runs it on each element
+Once the function returns true on an element, the iteration stops and true is returned
+
+const array = [1, 2, 3, 4, 5];
+
+// checks whether an element is even
+const even = function(element) {
+  console.log(element);
+  return element % 2 === 0;
+}
+
+console.log(array.some(even));
+// > 1
+// > 2
+// > true
+
+
+Get current year:
+year = new Date().getFullYear();
+
+Can create a regex object using a variable value like so:
+var regex = new RegExp('\\b' + word + '\\b', 'gi');
+
+String.prototype.repeat():
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
+runs on a string object
+takes in an integer argument representing number of times to repeat string; new string returned
