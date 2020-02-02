@@ -39,12 +39,60 @@ Easy 3:
 10: 4
 
 Easy 4:
+1: 4
+2: 3
+3: 3
+4: 2
+5: 2
+6: 3  toFixed
+7: 2
+8: 2
+9: 2
+10: 2
 
 Easy 5:
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+8:
+9:
+10:
 
 List Processing: total of 3/4 
 
 String and Text Processing: total 3/4
+
+Medium Problems 1:
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+8:
+
+Medium Problems 2:
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+
+Advanced 1:
+1:
+2:
+3:
+4:
+5:
+6:
+7:
 
 Interpretive Problem Solving:
 1: 4
@@ -54,10 +102,26 @@ Interpretive Problem Solving:
 5: 5
 6: 4
 
+Debugging:
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+8:
+9:
+10:
+
 
 Things Looked Up:
 Outputting number with set decimal points (even when integer)
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+
+Math.round() takes a number and ruonds it to nearest integer
+Can't round to a certain decimal value; need to use toFixed on number object
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
 
 Getting random numbers:
 use math.random()
