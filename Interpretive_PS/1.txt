@@ -1,0 +1,30 @@
+PEDAC:
+Understanding the problem:
+- Have n switches all of which connect to and toggle for their specific light
+- All lights start off (false)
+- Toggle every switch from start to end that is evenly divisible by 1
+- Then restart at beginning and toggle those evenly divisble by 2
+- Repeat process till we do evenly divisible by n
+- Input: n
+- Output: array of numbers representing switches that are on
+- Mental model: Given the n value, generate a corresponding data structure to 
+represent the switches. Then run loops to toggle the valid switches. Then generate
+the return array from the data structure and return it.
+Examples and Test cases:
+- 0 or negative n or is a non-number? Return empty array
+DS:
+- array of booleans with indexes corresponding to switches; easier to use
+- obj with key being switch number and value being boolean value
+Algorithm:
+- Run a loop from 1 to n; assigned value of false to those indexes in array
+- Run another loop from 1 to n; currentDivisor = that num
+  - Within that, run another loop over the array from 1 to n
+    - Check if current index is evenly divisible by currentDivisor
+    - If so, toggle that boolean element to opposite
+    - if not, then do nothing and continue
+- Once loop in loop is done, run anotehr for loop on the array (1 to n)
+  - if current value is true, add that index to result array
+- Return result array
+
+- Minor change; in ds, use indexes 0 to n - 1; hence need to consider when 
+translating

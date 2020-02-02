@@ -1,0 +1,48 @@
+PEDAC:
+Understanding the problem:
+- Input: plaintext string and a shift amount number
+- Output: ciphertext
+- Caesar cipher takes the characters given and shifts each one by the shift value
+- This shift can wrap around; y shifted by 5 yields d
+- This shift applies to lower and uppercase letters; case remains as is
+- Non-letters will remain unaffected
+Examples/Test Cases:
+- Given
+DS:
+- Array to store the string's individual characters
+- Use codePointAt and String.fromCharCode along with modulus for conversion
+- Alternative is to store all letters in an array and use that for conversion
+- Could use that array, given letter, find index, add shift amount, use modulus,
+and calculate new char
+Algorithm:
+- Split the string into an array of characters
+- Create variables for lowerCaseMin = 97 and upperCaseMin = 65
+- Max will be lowerCaseMin + 25
+- Create another variable called isUpperCase; boolean
+- Iterate over this string and map each character to it's corresponding shifted value
+  - If current character is not a letter, then don't do anything
+  - If it is a letter, then set isUpperCase as appropriate
+  - Then find corresponding ASCII value
+  - Add shift amount to it
+  - If it is out of range (check with the variables from earlier), then subtract
+  the min value from it
+  - Then run modulus 26 on it
+  - Then take the resulting number and add the min value to it to
+  - Pass this value into String.fromCharCode to get the new letter to be outputted
+- Return resulting array joined into a string
+
+2nd Algorithm:
+- Alternative is to store all letters in an array and use that for conversion
+- Could use that array, given letter, find index, add shift amount, use modulus,
+and calculate new char
+
+- Create a constant holding letters a to z lowerCase
+- Create a varaible isUpperCase
+- Once again map over array of characters
+  - For current character, update isUpperCase variable accordingly
+  - Then convert it to lowercase and check index of it in array
+  - If -1, then do nothing
+  - If valid num, then means is letter
+  - Take that index, add shift, and % 26 to get new index
+  - Pull out that letter. if toUpperCase is true, then upcase; then return from map
+- Return array joined string again

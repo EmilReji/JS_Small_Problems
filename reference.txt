@@ -47,8 +47,13 @@ List Processing: total of 3/4
 String and Text Processing: total 3/4
 
 Interpretive Problem Solving:
+1: 4
 2: 4
 3: 7; misunderstood problem and missed multiple edge cases; need to redo
+4: 5
+5:
+6: 
+
 
 Things Looked Up:
 Outputting number with set decimal points (even when integer)
