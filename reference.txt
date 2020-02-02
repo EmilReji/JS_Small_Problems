@@ -51,8 +51,8 @@ Interpretive Problem Solving:
 2: 4
 3: 7; misunderstood problem and missed multiple edge cases; need to redo
 4: 5
-5:
-6: 
+5: 5
+6: 4
 
 
 Things Looked Up:

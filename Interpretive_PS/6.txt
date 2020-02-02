@@ -1,0 +1,47 @@
+PEDAC:
+Understanding the problem:
+- Input: an odd integer greater than or equal to 7
+7, 9, 11, ...
+- Output: no return value needed; just print the stars
+- There will be n lines outputted
+- The middle line will have n stars in a row with no spaces
+- All the other lines will have 3 stars with varying amounts
+of space between each
+- The lines right above and below middle have 3 stars with
+(n - 3)/2 spaces on each side (only need to consider left side)
+- The lines 2 above and 2 below have ((n - 3)/2 - 1) spaces
+on each side (only need to consider left side); then have
+3 stars seperated by 1 space
+- The lines 3 above and 3 below have ((n - 3)/2 - 2) spaces
+on each side (only need to consider left side); then have
+3 stars seperated by 2 space
+- This pattern repeats; there are (n - 1)/2 non-middle rows
+on bottom and top
+Examples and Test Cases: Given
+DS:
+Array could be used to hold various characters; but string
+seems good enough for now
+Algorithm:
+Call 3 seperate function; 1st one handles top; 
+2nd handles middle;
+3rd handles bottom
+Each function should take n value
+
+Top:
+Run a loop from 1 to (n - 1)/2 (both inclusive)
+- Create a variable startSpaces
+- Set it equal to (i - 1)
+- Create another variable middleSpaces 
+- Set it equal to ((n - 1)/2) - i
+- Output startSpaces + '*' + middleSpaces + '*' + middleSpaces + '*'
+
+Middle:
+Output string of n stars in one line
+
+Bottom:
+Run a loop from (n - 1)/2 to 1 (both inclusive)
+- Create a variable startSpaces
+- Set it equal to ((n - 3)/2) - (i - 1)
+- Create another variable middleSpaces 
+- Set it equal to i - 1
+- Output startSpaces + '*' + middleSpaces + '*' + middleSpaces + '*'

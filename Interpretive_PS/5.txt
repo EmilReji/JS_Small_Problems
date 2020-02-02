@@ -1,0 +1,73 @@
+PEDAC:
+Understanding the problem:
+- Input: plaintext and keyword
+- Output: ciphertext
+- The keyword is used for shift value
+- If keyword contains a, shift that letter by 0
+- If it contains z, shift that letter by 25
+- Need to shift each letter of plaintext based on where keyword
+lines up according to plaintext
+- If keyword is shorter than plaintext, do shifts with same
+keyword repeated
+- The shifting isn't done on non-letters; keep as is
+- While shifting isn't case sensitive in that A and a have
+the same shift value, shifiting is case sensitive in that
+if the plaintext had lowercase, then ciphertext will have 
+lowercase
+- Mental Model: Split the plaintext into an array of characters.
+Run the encryption method on the character if its a letter.
+Return resulting array joined together.
+- Encryption method mental model: Takes plaintext character and
+keyword character. Shifts plaintext character (wrap around is
+accounted for) based on keyword character. Returns it.
+Examples/Test Cases:
+- plaintext with letters in only lowercase
+- plaintext with letters in both cases
+- plaintext with letters in both cases and non-letters (spaces, punctuationm, numbers)
+- Empty plaintext; should return empty string
+- keyword with both cases
+- keyword with non letters; assume it won't occur
+- wrap around needs testing
+DS:
+two arrays needed to hold the plaintext chrs and keyword chrs
+Algorithm:
+encryptionStr method:
+- convert both the plaintext and keyword to an array of characters
+- Iterate over plaintext Array using map
+  - Check if current chr is letter; if so continue; otherwise don't do anything
+  - To find corresponding keyword chr, take current index % keyword.length
+    and use that as an index in keywordArr
+  - Pass in both plaintext chr and keyword chr into encryptionChr method
+  - callback should return the result of this call
+- final return of map should be joined and returned
+
+encryptionChr Method:
+- method should take plainTextChr and keywordChr
+- method is only called when plainTextChr is a letter; don't have to worry about others
+here
+- convert keywordChr to lowerCase since that doesn't make a difference to use
+- create a constant array containing letters a to z lowercase
+- create a variable isUpperCase flag and based on current plainTextChr,
+set to true or false
+- convert plainTextChr to lowercase for now; find index of it in array
+- then find index of keywordChr
+- add those two numbers together, then take modulus 26
+- this new index should be used to pull resulting letter from constatn array
+- then based on isUpperCase flag, either run toUpperCase or dont; then return
+
+Missed Edge Case:
+- Can't use map's idx when calcuating which letter from keyword should be used
+- This is because when there is a non-letter, this index will still increment
+which will throw off which keyword character we select by one for every non-letter
+we have in our plaintext
+- Alternative is to create a manual index which only increments after a letter is
+encrypted; don't increment when non letter is found
+
+Can't use this any more since it doesn't account for non letters when generating
+Keyword Array generation method:
+- method should take in initial keyword array and plaintext array length
+- Create a result array that is empty
+- Create a varaible called initalLength to store keywordArray's length
+- Run a loop for plaintext array length times
+- On each iteration take keywordArr[current index % initalLength] and add to result array
+- Once loop done, return result array
