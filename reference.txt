@@ -67,9 +67,9 @@ List Processing: total of 3/4
 String and Text Processing: total 3/4
 
 Medium Problems 1:
-1:
-2:
-3:
+1: 4
+2: 4 
+3: 7; failed for numbers with 0 in them
 4:
 5:
 6:
