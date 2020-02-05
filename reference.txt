@@ -83,7 +83,7 @@ Medium Problems 2:
 4: 5; review date object's methods
 5: 4
 6: 3
-7:
+7: 5; finished but good to review
 
 Advanced 1:
 1:
