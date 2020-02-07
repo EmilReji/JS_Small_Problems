@@ -86,13 +86,13 @@ Medium Problems 2:
 7: 5; finished but good to review
 
 Advanced 1:
-1:
-2:
-3:
-4:
-5:
-6:
-7:
+1: 6; misunderstood problem needs; also needed to look up random
+2: 4
+3: 6; indexes are tricky; practice visualizing solution and writing pseudocode out again
+4: 4; simple once #3 is figured out; should repeat this though
+5: 5; missed mutation part
+6: 5
+7: 7; failed to pass all test cases; have off by one errors; fixing one test case broke others
 
 Interpretive Problem Solving:
 1: 4
@@ -171,3 +171,8 @@ Can't use map directly on object; can convert to array of keys and map it
 
 Need to review date methods in general:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+Math.random: 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+- Math.floor(Math.random() * Math.floor(n))
+- That will return a random integer between 0 (inclusive) and n (exclusive)
