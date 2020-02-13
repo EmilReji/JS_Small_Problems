@@ -93,12 +93,13 @@ function temp(array){
 }
 
 // var yellowPages = ['Apple Store', 'Bags Galore', 'Bike Store', 'Donuts R Us', 'Eat a Lot', 'Good Food', 'Pasta Place', 'Pizzeria', 'Tiki Lounge', 'Zooper'];
-// console.log(binarySearch(yellowPages, 'Zooper'));                   // 7
+// console.log(binarySearch(yellowPages, 'Zooper'));                   // 9
 // console.log(binarySearch(yellowPages, 'Apple Store'));                // 0
 
 // var yellowPages = ['Apple Store', 'Bags Galore', 'Bike Store', 'Eat a Lot', 'Good Food', 'Pasta Place', 'Pizzeria', 'Tiki Lounge', 'Zooper'];
-// console.log(binarySearch(yellowPages, 'Zooper'));                   // 6
+// console.log(binarySearch(yellowPages, 'Zooper'));                   // 8
 // console.log(binarySearch(yellowPages, 'Apple Store'));                // 0
+
 
 // console.log(binarySearch([1, 5, 7, 11, 23, 45, 65, 89, 102], 77));    // -1
 // console.log(binarySearch([1, 5, 7, 11, 23, 45, 65, 89, 102, 109], 77));    // -1

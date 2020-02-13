@@ -51,16 +51,16 @@ Easy 4:
 10: 2
 
 Easy 5:
-1:
-2:
-3:
-4:
-5:
-6:
-7:
-8:
-9:
-10:
+1: 2
+2: 3 
+3: 4
+4: 4
+5: 2
+6: 2
+7: 3
+8: 3
+9: 3
+10: 3
 
 List Processing: total of 3/4 
 
@@ -176,3 +176,6 @@ Math.random:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 - Math.floor(Math.random() * Math.floor(n))
 - That will return a random integer between 0 (inclusive) and n (exclusive)
+
+Division in JS (unlike Ruby) returns a decimal if remainder is there.
+Use Math.trunc on result to get rid of decimal; alternatives are floor and ceil
