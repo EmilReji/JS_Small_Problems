@@ -71,7 +71,7 @@ Medium Problems 1:
 2: 4 
 3: 7; failed for numbers with 0 in them
 4:
-5:
+5: 5; missed one edgecase
 6: 4
 7: 4
 8: 4
@@ -103,16 +103,16 @@ Interpretive Problem Solving:
 6: 4
 
 Debugging:
-1:
-2:
-3:
-4:
-5:
-6:
-7:
-8:
-9:
-10:
+1: 6
+2: 4
+3: 3
+4: 3
+5: 3
+6: 3
+7: 3
+8: 4
+9: 5
+10: 5
 
 
 Things Looked Up:
@@ -179,3 +179,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 Division in JS (unlike Ruby) returns a decimal if remainder is there.
 Use Math.trunc on result to get rid of decimal; alternatives are floor and ceil
+
+The arguments object isn't an array; can convert to one like so:
+var args = Array.prototype.slice.call(arguments);
