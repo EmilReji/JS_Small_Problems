@@ -131,11 +131,15 @@ Math.random() returns a floating point number between 0 inclusive and 1 exclusiv
 need to use Math.floor here because it ensures you always round down
 if Math.round is used and your resulting number is 200.8, then it will round up to 201 which is invalid
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+- Math.floor(Math.random() * Math.floor(n))
+- That will return a random integer between 0 (inclusive) and n (exclusive)
+
 Find last digit:
 num % 10
 
 To find suffix:
-To account for numbers ending in 11, 12, and 13, can convert num to string and check last 2 digits using str.slice(str.length - 2) !=== 11
+To account for numbers ending in 11, 12, and 13, can convert num to string and check last 2 digits using str.slice(str.length - 2) !== 11
 
 Array.prototype.some:
 Can run on an array object
@@ -155,6 +159,18 @@ console.log(array.some(even));
 // > 2
 // > true
 
+const array = [1, 2, 3, 4, 5];
+
+// checks whether an element is even
+const even = function(element) {
+  console.log(element);
+  return element % 2 === 0;
+}
+
+console.log(array.every(even));
+// > 1
+// > false
+
 
 Get current year:
 year = new Date().getFullYear();
@@ -171,11 +187,6 @@ Can't use map directly on object; can convert to array of keys and map it
 
 Need to review date methods in general:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-
-Math.random: 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-- Math.floor(Math.random() * Math.floor(n))
-- That will return a random integer between 0 (inclusive) and n (exclusive)
 
 Division in JS (unlike Ruby) returns a decimal if remainder is there.
 Use Math.trunc on result to get rid of decimal; alternatives are floor and ceil

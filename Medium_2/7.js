@@ -97,36 +97,36 @@ var array = [5, 4, 3, 2, 1];
 bubbleSort(array);
 console.log(array);    // [1, 2, 3, 4, 5]
 
-// var array = [5, 3];
-// bubbleSort(array);
-// console.log(array);    // [3, 5]
+var array = [5, 3];
+bubbleSort(array);
+console.log(array);    // [3, 5]
 
-// var array = [6, 2, 7, 1, 4];
-// bubbleSort(array);
-// console.log(array);    // [1, 2, 4, 6, 7]
+var array = [6, 2, 7, 1, 4];
+bubbleSort(array);
+console.log(array);    // [1, 2, 4, 6, 7]
 
-// var array = [25, 6, 13, 2, 7, 1, 4];
-// bubbleSort(array);
-// console.log(array);    // [1, 2, 4, 6, 7, 13, 25]
-
-
-// var array = [2, 1, 4, 6, 7, 13, 25];
-// bubbleSort(array);
-// console.log(array);    // [1, 2, 4, 6, 7, 13, 25]
-
-// var array = ['Sue', 'Pete', 'Alice', 'Tyler', 'Rachel', 'Kim', 'Bonnie'];
-// bubbleSort(array);
-// console.log(array);    // ["Alice", "Bonnie", "Kim", "Pete", "Rachel", "Sue", "Tyler"]
+var array = [25, 6, 13, 2, 7, 1, 4];
+bubbleSort(array);
+console.log(array);    // [1, 2, 4, 6, 7, 13, 25]
 
 
-// var array = 'A|aB|bC|cD|dE|eF|fG|gH|hI|iJ|jK|kL|lM|mN|nO|oP|pQ|qR|rS|sT|tU|uV|vW|wX|xY|yZ|z'.replace(/\|/g, '').split('').reverse();
-// bubbleSort(array);
-// console.log(array);    // ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+var array = [2, 1, 4, 6, 7, 13, 25];
+bubbleSort(array);
+console.log(array);    // [1, 2, 4, 6, 7, 13, 25]
 
-// var array = 'A|aB|bC|cD|dE|eF|fG|gH|hI|iJ|jK|kL|lM|mN|nO|oP|pQ|qR|rS|sT|tU|uV|vW|wX|xY|yZ|z'.replace(/\|/g, '').split('');
-// bubbleSort(array);
-// console.log(array);    // ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+var array = ['Sue', 'Pete', 'Alice', 'Tyler', 'Rachel', 'Kim', 'Bonnie'];
+bubbleSort(array);
+console.log(array);    // ["Alice", "Bonnie", "Kim", "Pete", "Rachel", "Sue", "Tyler"]
 
-// var array = 'A|aB|bC|cD|dE|eF|fG|gH|hI|iJ|jK|kL|lM|mN|nO|oP|pQ|qR|rS|sT|tU|uV|vW|wX|xY|yZ|z'.replace(/\|/g, '').split('').sort();
-// bubbleSort(array);
-// console.log(array);    // ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+var array = 'A|aB|bC|cD|dE|eF|fG|gH|hI|iJ|jK|kL|lM|mN|nO|oP|pQ|qR|rS|sT|tU|uV|vW|wX|xY|yZ|z'.replace(/\|/g, '').split('').reverse();
+bubbleSort(array);
+console.log(array);    // ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+var array = 'A|aB|bC|cD|dE|eF|fG|gH|hI|iJ|jK|kL|lM|mN|nO|oP|pQ|qR|rS|sT|tU|uV|vW|wX|xY|yZ|z'.replace(/\|/g, '').split('');
+bubbleSort(array);
+console.log(array);    // ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+var array = 'A|aB|bC|cD|dE|eF|fG|gH|hI|iJ|jK|kL|lM|mN|nO|oP|pQ|qR|rS|sT|tU|uV|vW|wX|xY|yZ|z'.replace(/\|/g, '').split('').sort();
+bubbleSort(array);
+console.log(array);    // ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
